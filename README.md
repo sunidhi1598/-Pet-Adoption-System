@@ -1,108 +1,92 @@
-Pet Adoption Management System
-Project Description
+# Pet Adoption System
 
-This is a full stack web application built using the MERN stack (MongoDB, Express, React, Node.js). The application allows visitors to browse pets available for adoption, users to submit adoption requests, and administrators to manage adoption applications.
+A full-stack MERN application for browsing pets and managing adoption requests.
 
-This project demonstrates frontend development, backend API creation, authentication, and database integration.
+## Live Demo
 
-Live Links
-Frontend (User Interface)
+- **Frontend:** https://petadoptionsystemm.netlify.app/
+- **Backend API:** https://pet-adoption-system-8duc.onrender.com/
+- **GitHub:** https://github.com/sunidhi1598/pet-adoption-system
 
-https://petadoptionsystemm.netlify.app
+## Features
 
-Backend API
+### Visitor
+- View list of available pets
+- Search pets by name or breed
+- Filter pets by species
+- View pet details
+- Pagination on pet list
 
-https://pet-adoption-system-8duc.onrender.com
+### User
+- Register and login with JWT authentication
+- Apply to adopt available pets
+- View personal adoption applications and status
 
-GitHub Repository
+### Admin
+- View all adoption applications
+- Approve or reject adoption requests
+- Pet status automatically updates after approval
 
-https://github.com/sunidhi1598/-Pet-Adoption-System
+## Tech Stack
 
-Technologies Used
-Frontend
+**Frontend:** React, Axios, Bootstrap, React Router  
+**Backend:** Node.js, Express.js, MongoDB, JWT Authentication  
+**Deployment:** Netlify (Frontend), Render (Backend)
 
-React
+## Installation
 
-Axios
-
-Bootstrap
-
-Backend
-
-Node.js
-
-Express.js
-
-JWT Authentication
-
-Database
-
-MongoDB
-
-Features
-Visitor
-
-View list of available pets
-
-Search pets by name
-
-Filter pets by species
-
-View pet details
-
-Pagination on pet list
-
-User
-
-Register and login
-
-Apply to adopt available pets
-
-View personal adoption applications and status
-
-Admin
-
-View all adoption applications
-
-Approve or reject adoption requests
-
-Pet status automatically updates after approval
-
-Project Structure
-pet-adoption-system
-│
-├── backend
-│   ├── models
-│   ├── routes
-│   ├── middleware
-│   └── server.js
-│
-├── frontend
-│   ├── src
-│   ├── components
-│   ├── pages
-│   └── App.js
-│
-└── README.md
-Running the Project Locally
-Backend
+### Backend Setup
+```bash
 cd backend
 npm install
 npm start
 
-Create a .env file with:
+Create .env file:
 
-PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-Frontend
+PORT=5000
+Frontend Setup
 cd frontend
 npm install
 npm start
+API Endpoints
+Auth
 
-The application will run at:
+POST /api/auth/register - Register user
 
-http://localhost:3000
+POST /api/auth/login - Login user
+
+Pets
+
+GET /api/pets - Get all pets
+
+GET /api/pets/:id - Get pet details
+
+Applications
+
+POST /api/applications - Apply for adoption
+
+GET /api/applications/all - Get all applications
+
+PUT /api/applications/:id - Approve or reject application
+
+Project Structure
+pet-adoption-system/
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.js
+│
+└── README.md
 Author
 
 Sunidhi Kumari
+GitHub: https://github.com/sunidhi1598
