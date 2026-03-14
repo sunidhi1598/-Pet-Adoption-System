@@ -114,4 +114,3 @@ PUT /api/applications/:id
 Author
 
 Sunidhi Kumari
->>>>>>> 04559fc17b1147958817ce837a4f36012cdde08f
