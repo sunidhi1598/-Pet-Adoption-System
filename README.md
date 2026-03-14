@@ -6,7 +6,6 @@ This is a full stack web application built using the MERN stack (MongoDB, Expres
 This project demonstrates frontend development, backend API creation, authentication, and database integration.
 
 Live Links
-
 Frontend (User Interface)
 
 https://petadoptionsystemm.netlify.app
@@ -18,19 +17,26 @@ https://pet-adoption-system-8duc.onrender.com
 GitHub Repository
 
 https://github.com/sunidhi1598/-Pet-Adoption-System
-Technologies Used
 
+Technologies Used
 Frontend
+
 React
+
 Axios
+
 Bootstrap
 
 Backend
+
 Node.js
+
 Express.js
+
 JWT Authentication
 
 Database
+
 MongoDB
 
 Features
@@ -95,8 +101,8 @@ npm install
 npm start
 
 The application will run at:
+
 http://localhost:3000
-
-
 Author
+
 Sunidhi Kumari
