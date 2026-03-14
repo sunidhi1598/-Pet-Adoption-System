@@ -25,7 +25,7 @@ return(
 
 <div className="card">
 
-<img src={pet.imageUrl} className="card-img-top"/>
+<img src={pet.imageUrl} alt={pet.name} className="card-img-top"/>
 
 <div className="card-body">
 

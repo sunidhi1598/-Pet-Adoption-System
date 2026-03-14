@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Home(){
 
  const [pets,setPets] = useState([]);
- const [search,setSearch] = useState("");
- const [species,setSpecies] = useState("");
- const [page,setPage] = useState(1);
+ const [search] = useState("");
+const [species] = useState("");
+const [page] = useState(1);
  const [loading,setLoading] = useState(true);
 
  useEffect(()=>{
