@@ -1,10 +1,23 @@
 Pet Adoption Management System
 Project Description
 
-This is a full stack web application built using the MERN stack (MongoDB, Express, React, Node.js). The application allows users to browse pets available for adoption and submit adoption requests. Administrators can manage pets and review adoption applications.
+This is a full stack web application built using the MERN stack (MongoDB, Express, React, Node.js). The application allows visitors to browse pets available for adoption, users to submit adoption requests, and administrators to manage adoption applications.
 
-The goal of this project is to demonstrate full stack development including frontend UI, backend APIs, authentication, and database integration.
+This project demonstrates frontend development, backend API creation, authentication, and database integration.
 
+Live Links
+
+Frontend (User Interface)
+
+https://petadoptionsystemm.netlify.app
+
+Backend API
+
+https://pet-adoption-system-8duc.onrender.com
+
+GitHub Repository
+
+https://github.com/sunidhi1598/-Pet-Adoption-System
 Technologies Used
 
 Frontend
@@ -47,7 +60,7 @@ View all adoption applications
 
 Approve or reject adoption requests
 
-Pet status updates automatically when adoption is approved
+Pet status automatically updates after approval
 
 Project Structure
 pet-adoption-system
@@ -56,8 +69,7 @@ pet-adoption-system
 │   ├── models
 │   ├── routes
 │   ├── middleware
-│   ├── server.js
-│   └── .env.example
+│   └── server.js
 │
 ├── frontend
 │   ├── src
@@ -66,62 +78,25 @@ pet-adoption-system
 │   └── App.js
 │
 └── README.md
-Installation and Setup
-Clone the repository
-git clone <repository-url>
-Backend Setup
-
-Go to the backend folder.
-
+Running the Project Locally
+Backend
 cd backend
 npm install
 npm start
 
-Create a .env file and add the following variables:
+Create a .env file with:
 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-Frontend Setup
-
-Go to the frontend folder.
-
+Frontend
 cd frontend
 npm install
 npm start
 
 The application will run at:
-
 http://localhost:3000
-API Endpoints
 
-Auth Routes
-POST /api/auth/register
-POST /api/auth/login
-
-Pet Routes
-GET /api/pets
-POST /api/pets
-PUT /api/pets/:id
-DELETE /api/pets/:id
-
-Application Routes
-POST /api/applications
-GET /api/applications/my
-GET /api/applications/all
-PUT /api/applications/:id
-
-Run Your Project Locally
-Backend:
-cd backend
-npm install
-npm start
-
-Frontend:
-cd frontend
-npm install
-npm start
 
 Author
-
 Sunidhi Kumari
